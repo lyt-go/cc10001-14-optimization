@@ -70,7 +70,7 @@ import { request } from '@/api/client'
 type Row = Record<string, string | number | null>
 
 const ENDPOINT = '/api/diagnose'
-const columns = ["报告编号", "关联任务", "异常类型", "异常堆栈", "发生时间", "影响行数", "根因分类", "修复建议"]
+const columns = ["报告编号", "关联任务", "异常类型", "告警级别", "阈值版本", "发生时间", "结案时间", "结案结论", "根因分类", "修复建议"]
 const actions = ["开始分析", "标记结案", "归档报告"]
 const statuses = ["草稿", "分析中", "已结案", "已归档"]
 const stats = [{"label": "诊断报告总数", "value": 0}, {"label": "已结案报告", "value": 0}, {"label": "分析中报告", "value": 0}]
